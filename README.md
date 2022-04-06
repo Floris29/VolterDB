@@ -1,2 +1,2 @@
 # VolterDB
-Making a database with Xampp and mySQL for Volter.
+This is for a open URL
