@@ -1,2 +1,32 @@
 # VolterDB
-This is for a open URL
+Waarom verdoe jij je tijd hier jongeman?!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fukka Wukka
+Hoi
+Doei
