@@ -25,7 +25,7 @@ body {
 }
 
 
-#login-error-msg-holder {
+#Signup-error-msg-holder {
   width: 100%;
   height: 100%;
   display: grid;
@@ -33,7 +33,7 @@ body {
   align-items: center;
 }
 
-#login-error-msg {
+#Signup-error-msg {
   width: 23%;
   text-align: center;
   margin: 0;
@@ -50,18 +50,18 @@ body {
   display: block;
 }
 
-#login-form {
+#Signup-form {
   align-self: flex-start;
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
-.login-form-field::placeholder {
+.Signup-form-field::placeholder {
   color: #3a3a3a;
 }
 
-.login-form-field {
+.Signup-form-field {
   border: none;
   border-bottom: 1px solid #3a3a3a;
   margin-bottom: 10px;
@@ -70,7 +70,7 @@ body {
   padding: 0px 0px 5px 5px;
 }
 
-#login-form-submit {
+#Signup-form-submit {
   width: 100%;
   padding: 7px;
   border: none;

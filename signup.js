@@ -1,16 +1,16 @@
-const loginForm = document.getElementById("login-form");
-const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
+const SignupForm = document.getElementById("Signup-form");
+const SignupButton = document.getElementById("Signup-form-submit");
+const SignupErrorMsg = document.getElementById("Signup-error-msg");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
+    const username = SignupForm.username.value;
+    const password = SignupForm.password.value;
 
     if (username === "user" && password === "web_dev") {
-        alert("You have successfully logged in.");
+        alert("You have successfully Signed up.");
         location.reload();
     } else {
-        loginErrorMsg.style.opacity = 1;
+        SignupErrorMsg.style.opacity = 1;
     }
 })
