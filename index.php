@@ -8,6 +8,17 @@ include_once 'header.php';
   </div>
 
   <section class="index-intro">
+      <?php
+if (isset($_SESSION["useruid"])) {
+    echo "<p>Hello there " . $_SESSION["useruid"] . "</p>";
+
+    }
+    else {
+      echo "<li><a href='login.php'>Login</a></li>";
+    echo "<li><a href='signup.php'>Sign up.</a></li>";
+    }
+
+?>
       <hi>Is this working?</hi>
       <p>Under here are are some good looking things not?</p>
 </section>

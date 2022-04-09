@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <title>
@@ -18,8 +22,16 @@
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="discover.php">About this project</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="signup.php">Sign up</a></li>
+                <?php
+if (isset($_SESSION["useruid"])) {
+echo "<li><a href='profile.php'>Profile page</a></li>";
+echo "<li><a href='includes/logout.incphp'>Log out.</a></li>";
+}
+else {
+  echo "<li><a href='login.php'>Login</a></li>";
+echo "<li><a href='signup.php'>Sign up.</a></li>";
+}
+                ?>
 </ul>
 </div>
 </nav>
