@@ -16,7 +16,7 @@ if(!isset($_SESSION['username'])){
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>VolterDB</title>
 </head>
 <style>
     body{
