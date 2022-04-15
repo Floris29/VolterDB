@@ -14,7 +14,7 @@ if(!isset($_SESSION['username'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Volter.png">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <title>VolterDB</title>
 </head>
@@ -27,15 +27,9 @@ if(!isset($_SESSION['username'])){
 }
 </style>
 <body>
-    
-    <div class="container">
-
-    <a class="float-right logout" href="logout.php"> LOGOUT </a>
-
-    <h1> Welcome <?php echo $_SESSION['username']; ?> </h1>
-
-
-    </div>
+<div class="container">
+<a class=" Home" href="Home.html"> Home </a>
 
 </body>
+
 </html>
