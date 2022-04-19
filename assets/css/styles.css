@@ -334,6 +334,21 @@ img {
   font-weight: var(--font-medium);
 }
 
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button__icon{
+  font-size: 1.25rem;
+  margin-left: var(--mb-o-5);
+  transition: .3s;
+}
+
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+}
+
 /*==================== ABOUT ====================*/
 
 
