@@ -48,9 +48,6 @@ skillHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
 
-/*==================== QUALIFICATION TABS ====================*/
-
-
 /*==================== SERVICES MODAL ====================*/
 
 
