@@ -425,10 +425,55 @@ img {
   transition: .4s;
 }
 
-.skills_titles{
+.skills__list{
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__titles{
   display: flex;
   justify-content: space-between;
   margin-bottom: var(-mb-0-5);
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage{
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skills__bar{
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skills__html{
+  width: 35%;
+}
+.skills__css{
+  width: 19%;
+}
+.skills__js{
+  width: 42%;
+}
+
+.skills__php{
+  width: 23%;
+}.skills__node{
+  width: 65%;
+}
+
+.skills__photoshop{
+  width: 80%;
 }
 
 /*==================== QUALIFICATION ====================*/
