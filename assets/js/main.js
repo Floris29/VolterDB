@@ -54,9 +54,6 @@ skillHeader.forEach((el) =>{
 /*==================== PORTFOLIO SWIPER  ====================*/
 
 
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 
