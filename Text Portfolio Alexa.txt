@@ -36,11 +36,6 @@ project__description
 Contact me now and get a 30% discount on your new project.
 
 
-* TESTIMONIAL
-testimonial__description
-I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.
-
-
 * FOOTER
 footer__social
 https://www.facebook.com/
