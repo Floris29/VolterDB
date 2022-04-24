@@ -30,7 +30,7 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.querySelectorAll('skills__content'),
+const skillsContent = document.getElementsByClassName('skills__content'),
 skillHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills(){
@@ -49,9 +49,9 @@ skillHeader.forEach((el) =>{
 })
 
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.getElementById('.services__modal'),
-modalBtns = document.getElementById('.services__button'),
-modalCloses = document.getElementById('services__modal-close')
+const modalViews = document.querySelectorAll('.services__modal'),
+modalBtns = document.querySelectorAll('.services__button'),
+modalCloses = document.querySelectorAll('.services__modal-close')
 
 let modal = function(modalClick){
     modalViews[modalClick].classList.add('active-modal')
