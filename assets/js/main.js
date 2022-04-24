@@ -30,10 +30,10 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills__content')
+const skillsContent = document.getElementsByClassName('skills__content'),
 skillHeader = document.querySelectorAll('.skills__header')
 
-function toogleSkills(){
+function toggleSkills(){
     let itemClass = this.parentNode.className
 
     for(i = 0; i < skillsContent.length; i++){
@@ -58,7 +58,7 @@ let modal = function(modalClick){
 }
 
 modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', ()=>{
+    modalBtn.addEventListener('click', () =>{
         modal(i)
     })
 })
