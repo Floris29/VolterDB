@@ -73,6 +73,20 @@ modalCloses.forEach((modalClose) => {
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 
+//import Swiper from 'swiper/swiper-bundle.esm.js';
+//import 'swiper/swiper-bundle.css';
+let swiper = new Swiper('.portfolio__container', {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
