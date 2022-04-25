@@ -84,12 +84,19 @@
   align-items: center;
 }
 
+.dark-theme{
+  background: #222f3e;
+  color: white;
+}
+
+.uil.sun{
+  background: #fff;
+  color: black;
+}
+
 .change-theme{
-  position: absolute;
-  right: 1rem;
-  top: 1.8rem;
-  color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.25rem;
+  margin-right: var(--mb-1);
   cursor: pointer;
 }
 
