@@ -24,4 +24,4 @@ if ($num == 1) {
     echo" Registration Succesfull ";
 }
 
-?>
+?> 
