@@ -17,3 +17,20 @@
     top: 100;
     width: 100%;
 }
+
+
+.footer__title{
+    position: absolute;
+    bottom: 0px;
+    color: hsl(203, 100%, 50%);
+    font-size: x-large;
+}
+
+.footer__copy{
+    position: absolute;
+    bottom: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
