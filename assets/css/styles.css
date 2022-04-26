@@ -775,17 +775,17 @@ img {
 }
 
 
-.footer__copy {
+.footercopy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: var(--container-color);
   margin-top: var(--mb-3)
 }
 
-.footer__title,
-.footer__subtitle,
-.footer__link{
-  color: var(--first-color-alt);
+.footertitle,
+.footersubtitle,
+.footerlink{
+  color: var(--container-color);
 }
 
 
