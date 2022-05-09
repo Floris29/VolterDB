@@ -614,7 +614,8 @@ nav .menu .menu_icon:hover .icon:after {
 font-size: var(--smaller-font-size);
 text-align: center;
 color: var(--container-color);
-margin-top: var(--mb-3)
+margin-top: var(--mb-3);
+color: black;
 }
 
 
