@@ -26,7 +26,7 @@
     </div>
   </nav>
 
-  <link rel="icon" type="image/x-icon" href="assets1/favicon.png">
+  <link rel="icon" type="image/x-icon" href="assets1/favicon.ico">
 
   <section id="home">
     <div class="frame">
@@ -269,6 +269,27 @@
 
     </div>
 
+
+    <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+  
+      function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+  
+        for (var i = 0; i < reveals.length; i++) {
+  
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+  
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
+          } else {
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+    </script>
   
   <script src="discord.js"></script>
 </body>
