@@ -610,6 +610,12 @@ nav .menu .menu_icon:hover .icon:after {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-color-light);
 }
+.footer-links{
+font-size: var(--smaller-font-size);
+text-align: center;
+color: var(--container-color);
+margin-top: var(--mb-3)
+}
 
 
 @keyframes modalopen {
