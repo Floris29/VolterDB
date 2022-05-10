@@ -10,6 +10,7 @@
         
     <!-- ===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--<title>Responsive Navigation Menu Bar</title>-->
 </head>
@@ -32,6 +33,8 @@
                    </ul>
             </div>
 
+                
+
             <div class="darkLight-searchBox">
                 <div class="dark-light">
                     <i class='bx bx-moon moon'></i>
@@ -40,6 +43,12 @@
             </div>
         </div>
     </nav>
+
+
+    <p class="footer__copy">&#169; Floris Melchers Portfolio. All right reserved</p>
+    
+    </body>
+
 
 <script>
 
@@ -68,33 +77,10 @@ const body = document.querySelector("body"),
         }
       });
 
-// js code to toggle search box
-        searchToggle.addEventListener("click" , () =>{
-        searchToggle.classList.toggle("active");
-      });
- 
-      
-//   js code to toggle sidebar
-sidebarOpen.addEventListener("click" , () =>{
-    nav.classList.add("active");
-});
-
-body.addEventListener("click" , e =>{
-    let clickedElm = e.target;
-
-    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-        nav.classList.remove("active");
-    }
-});
 
 </script>
 
 
-<footer>
-    <p>&#169; Floris Melchers Portfolio. All right reserved<br></p>
-  </footer>
-<p class="footer__copy">&#169; Floris Melchers Portfolio. All right reserved</p>
 
-</body>
 </html>
 
