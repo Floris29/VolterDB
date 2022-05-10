@@ -102,15 +102,21 @@ section .cards {
   position: relative;
 }
 
-section .cards .text-card {
-  background: white;
+section .cards {
+  background: black;
   margin: 20px;
   padding: 20px;
+}
+
+.text-card{
+  color: white;
+  
 }
 
 section .cards .text-card h3 {
   font-size: 30px;
   text-align: center;
+  color: white;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
