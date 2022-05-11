@@ -23,7 +23,7 @@ nav{
     left: 0;
     height: 70px;
     width: 100%;
-    background-color: var(--first-color);
+    background-color: blue;
     z-index: 100;
 }
 
@@ -32,7 +32,7 @@ nav .nav-bar{
     height: 100%;
     max-width: 1000px;
     width: 100%;
-    background-color: var(--first-color)
+    background-color: blue;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
@@ -41,7 +41,7 @@ nav .nav-bar{
 }
 
 nav .nav-bar .sidebarOpen{
-    color: var(--title-color);
+    color: black;
     font-size: 25px;
     padding: 5px;
     cursor: pointer;
@@ -51,7 +51,7 @@ nav .nav-bar .sidebarOpen{
 nav .nav-bar .logo a{
     font-size: 25px;
     font-weight: 500;
-    color: var(--text-color);
+    color: black;
     text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ nav .nav-bar .logo a{
     position: relative;
     font-size: 17px;
     font-weight: 400;
-    color: var(--text-color);
+    color: black;
     text-decoration: none;
     padding: 10px;
 }
@@ -87,7 +87,7 @@ nav .nav-bar .logo a{
     height: 6px;
     width: 6px;
     border-radius: 50%;
-    background-color: var(--text-color);
+    background-color: blue;
     opacity: 0;
     transition: all 0.3s ease;
 }
@@ -95,42 +95,6 @@ nav .nav-bar .logo a{
 .nav-links li:hover a::before{
     opacity: 1;
 }
-
-.nav-bar .darkLight-searchBox{
-    display: flex;
-    align-items: center;
-}
-
-
-
-.searchToggle i.cancel{
-    opacity: 0;
-    pointer-events: none;
-}
-
-.searchToggle.active i.cancel{
-    opacity: 1;
-    pointer-events: auto;
-}
-
-
-.search-field::before{
-    content: '';
-    position: absolute;
-    right: 14px;
-    top: -4px;
-    height: 12px;
-    width: 12px;
-    background-color: var(--first-color);
-    transform: rotate(-45deg);
-    z-index: -1;
-}
-
-
-@media (max-width: 790px) {
-    nav .nav-bar .sidebarOpen{
-        display: block;
-    }
 
     .menu{
         position: fixed;
@@ -161,12 +125,6 @@ nav .nav-bar .logo a{
         justify-content: space-between;
     }
 
-    .logo-toggle .siderbarClose{
-        color: var(--text-color);
-        font-size: 24px;
-        cursor: pointer;
-    }
-
     .nav-bar .nav-links{
         flex-direction: column;
         padding-top: 30px;
@@ -176,5 +134,3 @@ nav .nav-bar .logo a{
         display: block;
         margin-top: 20px;
     }
-}
-
