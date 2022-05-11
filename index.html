@@ -35,46 +35,51 @@
 
                 
 
-            <i class="uil uil-moon change-theme" id="theme-button"></i>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+            </div>
         </div>
     </nav>
 
+
+    <p class="footer__copy">&#169; Floris Melchers Portfolio. All right reserved</p>
     
     </body>
 
-<script>
-    /*==================== DARK LIGHT THEME ====================*/ 
 
-    const themeButton = document.getElementById('theme-button')
-    const darkTheme = 'dark-theme'
-    const iconTheme = 'uil-sun'
-    
-    // Previously selected topic (if user selected)
-    const selectedTheme = localStorage.getItem('selected-theme')
-    const selectedIcon = localStorage.getItem('selected-icon')
-    
-    // We obtain the current theme that the interface has by validating the dark-theme class
-    const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-    const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
-    
-    // We validate if the user previously chose a topic
-    if (selectedTheme) {
-      // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-      document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-      themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
-    }
-    
-    // Activate / deactivate the theme manually with the button
-    themeButton.addEventListener('click', () => {
-        // Add or remove the dark / icon theme
-        document.body.classList.toggle(darkTheme)
-        themeButton.classList.toggle(iconTheme)
-        // We save the theme and the current icon that the user chose
-        localStorage.setItem('selected-theme', getCurrentTheme())
-        localStorage.setItem('selected-icon', getCurrentIcon())
-    })
+<script>
+
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
 
 </script>
+
 
 
 </html>
