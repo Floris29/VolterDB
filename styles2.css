@@ -13,7 +13,7 @@
 
 body{
     height: 100vh;
-    background-color: blue;
+    background-color: black;
 }
 
 
@@ -23,7 +23,7 @@ nav{
     left: 0;
     height: 70px;
     width: 100%;
-    background-color: blue;
+    background-color: black;
     z-index: 100;
 }
 
@@ -86,7 +86,7 @@ nav .nav-bar{
         left: -100%;
         top: 0;
         padding: 20px;
-        background-color: var(--first-color);
+        background-color: black;
         z-index: 100;
         transition: all 0.4s ease;
     }
