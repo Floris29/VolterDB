@@ -369,6 +369,7 @@ img {
 .footercopy {
   font-size: var(--smaller-font-size);
   text-align: center;
+  position: flex;
   color: var(--container-color);
   margin-top: var(--mb-3)
 }
