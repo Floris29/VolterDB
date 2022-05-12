@@ -1,103 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="styles2.css">
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
-    <!-- ===== Boxicons CSS ===== -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="styles.css">
 
-    <!--<title>Responsive Navigation Menu Bar</title>-->
-</head>
-<body>
-    <nav>
-        <div class="nav-bar">
-            <i class='bx bx-menu sidebarOpen' ></i>
-            <span class="logo navLogo"><a href="#">VolterDB</a></span>
+        <title>VolterDB</title>
+    </head>
+    <body>
+<!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Floris</a>
 
-            <div class="menu">
-                <div class="logo-toggle">
-                    <span class="logo"><a href="#">VolterDB</a></span>
-                    <i class='bx bx-x siderbarClose'></i>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+
+                            <a href="Portfolio.html" class="nav__link active-link">
+                                <i class="uil uil-bag-alt nav__incon"></i> Portfolio
+                            </a>
+                            <li class="nav__item">
+                            <a href="discord.html" class="nav__link">
+                                <i class="uil uil-discord nav__incon"></i> Discord
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
+                <div class="nav_btns">
+                <!--Theme change button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-                <ul class="nav-links">
-                    <li><a href="discord.html">Discord</a></li>
-                    <li><a href="Portfolio.html">Portfolio</a></li>
-                </ul>
-            </div>
-
-            <div class="darkLight-searchBox">
-                <div class="dark-light">
-                    <i class='bx bx-moon moon'></i>
-                    <i class='bx bx-sun sun'></i>
                 </div>
-            </div>
-        </div>
-    </nav>
-
-<script>
-
-const body = document.querySelector("body"),
-      nav = document.querySelector("nav"),
-      modeToggle = document.querySelector(".dark-light"),
-      searchToggle = document.querySelector(".searchToggle"),
-      sidebarOpen = document.querySelector(".sidebarOpen"),
-      siderbarClose = document.querySelector(".siderbarClose");
-
-      let getMode = localStorage.getItem("mode");
-          if(getMode && getMode === "dark-mode"){
-            body.classList.add("dark");
-          }
-
-// js code to toggle dark and light mode
-      modeToggle.addEventListener("click" , () =>{
-        modeToggle.classList.toggle("active");
-        body.classList.toggle("dark");
-
-        // js code to keep user selected mode even page refresh or file reopen
-        if(!body.classList.contains("dark")){
-            localStorage.setItem("mode" , "light-mode");
-        }else{
-            localStorage.setItem("mode" , "dark-mode");
-        }
-      });
-      
-//   js code to toggle sidebar
-sidebarOpen.addEventListener("click" , () =>{
-    nav.classList.add("active");
-});
-
-body.addEventListener("click" , e =>{
-    let clickedElm = e.target;
-
-    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-        nav.classList.remove("active");
-    }
-});
-
-</script>
-
-</body>
-<body>
-<div class="solid">
-    <div class="home__data">
-        <h1 class="home__title">Hi, I am Floris</h1>
-        <h3 class="home__subtitle">Starting developer</h3>
-        <p class="home__description">I am a starting developer.</p>
-    </div>
-</div>
-
-
-
-</body>
-
-
-
-
-
+            </nav>
+        </header>
 </html>
