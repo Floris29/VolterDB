@@ -16,6 +16,8 @@
     --nav-color: #4070F4;
     --side-nav: #010718;
     --text-color: #FFF;
+    --search-bar: #F2F2F2;
+    --search-text: #010718;
 }
 
 body{
@@ -114,8 +116,6 @@ nav .nav-bar .logo a{
 .nav-links li:hover a::before{
     opacity: 1;
 }
-
-
 
 .darkLight-searchBox .dark-light,
 .darkLight-searchBox .searchToggle{
@@ -284,6 +284,7 @@ body.dark .search-field i{
         margin-top: 20px;
     }
 }
+
 
 
 .home__data{
