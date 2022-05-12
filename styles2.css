@@ -12,12 +12,10 @@
 
 /* ===== Colours ===== */
 :root{
-    --body-color: #E4E9F7;
+    --body-color: white;
     --nav-color: #4070F4;
     --side-nav: #010718;
     --text-color: #FFF;
-    --search-bar: #F2F2F2;
-    --search-text: #010718;
 }
 
 body{
