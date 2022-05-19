@@ -295,7 +295,7 @@ nav .menu .menu_icon:hover .icon:after {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 97%;
   height: 65%;
   margin-top: -250px;
   margin-left: -650px;
@@ -314,7 +314,7 @@ nav .menu .menu_icon:hover .icon:after {
 }
 
 .botimg {
-  margin-left: 120px;
+  position: flex;
 }
 
 
@@ -369,9 +369,6 @@ nav .menu .menu_icon:hover .icon:after {
   text-align: center;
 }
 
-.frame {
-  background-color: #1D212B;
-}
 
 
 .faq-section {
